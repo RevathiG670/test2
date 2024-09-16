@@ -1,0 +1,700 @@
+What is Python?
+Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+
+It is used for:
+
+web development (server-side),
+software development,
+mathematics,
+system scripting.
+
+Python Comments:
+Comments can be used to explain Python code.
+
+Comments can be used to make the code more readable.
+
+Comments can be used to prevent execution when testing code.
+
+Variables:
+Variables are containers for storing data values.
+
+#Creating Variables:
+x = 5
+y = "John"
+print(x)
+print(y)
+
+Casting:
+Example
+x = str(3)    # x will be '3'
+y = int(3)    # y will be 3
+z = float(3)  # z will be 3.0
+
+Variable Names:
+It start with a letter or the underscore character
+it cannot start with a number
+it only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+Variable names are case-sensitive (age, Age and AGE are three different variables)
+
+Example:
+myvar = "John"
+my_var = "John"
+_my_var = "John"
+myVar = "John"
+MYVAR = "John"
+myvar2 = "John"
+
+Multi Words Variable Names:
+camel case
+pascal case
+snake case
+
+#Output Variables:
+print() function is used to output variables.
+Example:
+x = "Python is awesome"
+print(x)
+
+#Global variables:
+def myfunc():
+  global x
+  x = "fantastic"
+
+myfunc()
+
+print("Python is " + x)
+
+Built-in Data Types:
+Text Type:	str
+Numeric Types:	int, float, complex
+Sequence Types:	list, tuple, range
+Mapping Type:	dict
+Set Types:	set
+Boolean Type:	bool
+Binary Types:	bytes
+None Type:	NoneType
+
+Python Numbers:
+There are three numeric types in Python:
+
+1.int:
+x = 1
+y = 35656222554887711
+z = -3255522
+print(type(x))
+print(type(y))
+print(type(z))
+
+2.float:
+x = 1.10
+y = 1.0
+z = -35.59
+print(type(x))
+print(type(y))
+print(type(z))
+
+3.complex:
+x = 3+5j
+y = 5j
+z = -5j
+print(type(x))
+print(type(y))
+print(type(z))
+
+python strings:
+
+# slicing string
+x="todays homework"
+print(x[4:5])
+
+# slice from start
+x="todays homework"
+print(x[:5])
+
+# slice to the end
+x="todays homework"
+print(x[5:])
+
+# negative indexing
+x="todays homework"
+print(x[-4:-5])
+
+
+#modify string
+#uppercase
+x="todays homework"
+print(x.upper())
+
+#lowercase
+x="todays homework"
+print(x.lower())
+
+#remove whitespace
+x=" todays homework "
+print(x.strip())
+
+#replace string
+x="rates homework"
+print(x.replace("r","h"))
+
+#split string
+x="todays, homework"
+print(x.split(","))
+
+#concatenation string
+x="i"
+y=" hate"
+z=" homework"
+a=x+y+z
+print(a)
+
+#string format
+#f-string
+string=1
+txt=f"i have {string} cat"
+print(txt)
+
+#placeholders and modifiers
+string=2000
+txt=f"my cat is {string:.2f} rupees"
+print(txt)
+
+#escape characters
+txt="i hate doing \"homeworks\"."
+print(txt)
+
+python operators:
+#Arithmetic operators:
+Operator	Name	
++	        Addition		
+-	        Subtraction		
+*	        Multiplication		
+/	        Division		
+%	        Modulus		
+**	        Exponentiation	
+//	        Floor division
+
+#Assignment operators:
+operator     name
+=	         Assignment
++=	         Add and Assign
+-=	         Subtract and Assign
+*=	         Multiply and Assign
+/=	         Divide and Assign
+%=	         Modulus and Assign
+**=	         Exponentiation and Assign
+//=	         Floor Division and Assign
+&=	         Bitwise AND and Assign
+^=	         Bitwise XOR and Assign
+<<=	         Left Shift and Assign
+>>=	         Right Shift and Assign
+
+#Comparison operators:
+Operator	Name	
+==	        Equal		
+!=	        Not equal	
+>	        Greater than		
+<	        Less than		
+>=	        Greater than or equal to	
+<=	        Less than or equal to
+
+#Logical operators:
+  and
+  or
+  not
+
+#Identity operators:
+  is
+  is not
+
+#Membership operators:
+  are
+  are not
+
+#Bitwise operators:
+Operator	Name	
+& 	        AND	
+|	        OR		
+^	        XOR		
+~	        NOT		
+<<	        Zero fill left shift	
+>>	        Signed right shift
+
+python list:
+
+#python lists
+#allows duplicate
+animals = ["cat","dog","fish","cow","goat","pig"]
+print(animals)
+
+#python check length
+animals = ["cat","dog","fish","cow","goat","pig"]
+print(len(animals))
+
+#python list type
+animals = ["cat","dog","fish"]
+print(type(animals))
+
+#python using list()
+animals = list(("cat","dog","fish"))
+print(list(animals))
+
+#access items
+animals = ["cat","dog","fish"]
+print(animals[0])
+
+#access items negative index
+animals = ["cat","dog","fish"]
+print(animals[-2])
+
+#range of index
+animals = ["cat","dog","fish","cow","goat","pig"]
+print(animals[2:4])
+
+animals = ["cat","dog","fish","cow","goat","pig"]
+print(animals[:4])
+
+animals = ["cat","dog","fish","cow","goat","pig"]
+print(animals[2:])
+
+#change list
+animals = ["cat","dog","fish","cow","goat","pig"]
+animals[2] = "birds"
+print(animals)
+
+#using insert
+animals = ["cat","dog","fish","cow","goat","pig"]
+animals.insert(2, "birds")
+print(animals)
+
+animals = ["cat","dog","fish","cow","goat","pig"]
+animals.insert(5, "dog")
+print(animals)
+
+#append
+animals = ["cat","dog","fish","cow","goat","pig"]
+animals.append("cat")
+print(animals)
+
+#remove
+animals = ["cat","dog","fish","cow","goat","pig"]
+animals.remove("pig")
+print(animals)
+
+#pop
+animals = ["cat","dog","fish","cow","goat","pig"]
+animals.pop(4)
+print(animals)
+
+#delete
+animals = ["cat","dog","fish","cow","goat","pig"]
+animals.delete("fish")
+print(animals)
+
+fruits = ["avacado","kiwi","butterfruit","liche","sweetlemon"]
+print(fruits)
+
+#sorted
+fruits = ["avacado","kiwi","butterfruit","liche","sweetlemon"]
+fruits.sort()
+print(fruits)
+
+#reversed
+fruits = ["avacado","kiwi","butterfruit","liche","sweetlemon"]
+fruits.reverse
+print(fruits)
+
+#list
+fruits = ["avacado","kiwi","butterfruit","liche","sweetlemon"]
+fruits=list("fruits")
+print(fruits)
+
+#slice operator
+fruits = ["avacado","kiwi","butterfruit","liche","sweetlemon"]
+fruits = list[:]
+print(fruits)
+
+#join list
+a = ["1","2","3"]
+b = ["4","5","6"]
+c = (a+b)
+print(c)
+
+#list using for and while loop:
+fruits = ["apple","banana","cherry"]
+#for 
+for item in fruits:
+    i = 0
+    #while
+    while i<1:
+        print(f"i like {item}")
+        i+=1
+
+
+#access list item
+list = ["apple", "banana", "cherry"]
+#for
+for index in range(len(list)):
+  if index == 1:
+      print(list[index])
+#while 
+index = 0
+while index < len(list):
+   if index ==  1:
+       print(list[index])
+       break
+   index += 1
+   
+      
+#change list item
+list = ["apple", "banana", "cherry"]
+for i in range(len(list)):
+    index = 0
+    while index < len(list):
+        if index == 1:
+            list[index] = "avacado"
+            break
+        index += 1
+    break
+print(list)
+
+    
+#add list items
+list = ["apple", "banana", "cherry"]
+for i in range(1):
+    append = False
+    while not append:
+        list.append("orange")
+        append = True
+print(list)        
+
+#remove list items
+list = ["apple", "banana", "cherry"]
+for i in range(len(list)):
+    index = 0
+    while index <len(list):
+        if list[index] == "cherry":
+         list.remove("cherry")
+        break
+    index += 1
+print(list)    
+
+
+#list comprehension
+fruit = ["apple", "banana", "cherry"]
+newlist = []
+for fruit in fruits:
+    index = 0
+    while index < len(fruit):
+        if "a" in fruit:
+            newlist.append(fruit)
+            break 
+        index += 1  
+print(newlist)
+
+
+#copy list
+thislist = ["apple", "banana", "cherry"]
+mylist = []
+index = 0
+while index < len(thislist):
+    for item in thislist:
+        mylist.append(item)  
+    index += 1 
+    break 
+print(mylist)
+
+
+#join list
+list1 = ["a", "b", "c"]
+list2 = [1, 2, 3]
+list3 = []
+for i in range(len(list1) + len(list2)):
+    index = 0
+    while index < 1:
+        if i < len(list1):
+            list3.append(list1[i])  
+        else:
+            list3.append(list2[i - len(list1)]) 
+        index += 1 
+print(list3)
+
+    
+python tuples:
+
+fruits = ("avacado","kiwi","butterfruit","liche","sweetlemon")
+print(fruits)
+
+fruits = ("avacado","kiwi","butterfruit","liche","sweetlemon")
+print(fruits[3])
+
+fruits = ("avacado","kiwi","butterfruit","liche","sweetlemon")
+print(fruits[-3])
+
+
+#update
+fruits = ("avacado","kiwi","butterfruit","liche","sweetlemon")
+y=fruits("orange")
+y.append("orange")
+fruits = tuple(y)
+
+#unpack tuples
+
+fruits = ("apple", "banana", "cherry")
+(green, yellow, red) = fruits
+print(green)
+print(yellow)
+print(red)
+
+tuple1 = ("avacado","kiwi","butterfruit","liche","sweetlemon")
+tuple2 = ("orange","blue","black")
+tuple3 = (tuple1+tuple2)
+print(tuple3)    
+
+python sets:
+# sets
+fruits = {"avacado","kiwi","butterfruit","liche","sweetlemon"}
+print(fruits)
+
+#boolean
+fruits = {"avacado","kiwi","butterfruit","liche","sweetlemon",False,0,1}
+print(fruits)
+
+#LENGTH
+fruits = {"avacado","kiwi","butterfruit","liche","sweetlemon"}
+print(len(fruits))
+
+#LENGTH
+fruits = {"avacado","kiwi","butterfruit","liche","sweetlemon"}
+print("kiwi" in fruits)
+
+#LENGTH
+fruits = {"avacado","kiwi","butterfruit","liche","sweetlemon"}
+print("kiwi" not in fruits)
+
+#update
+fruits = {"avacado","kiwi","butterfruit","liche","sweetlemon"}
+flowers = {"lily","lotus"}
+fruits.update(flowers)
+print(fruits)
+
+#remove
+fruits = {"avacado","kiwi","butterfruit","liche","sweetlemon"}
+fruits.remove("sweetlemon")
+print(fruits)
+
+#intersection
+fruits = {"avacado","kiwi","butterfruit","liche","sweetlemon"}
+flowers = {"lily","lotus","kiwi"}
+result=fruits.intersection(flowers)
+print(result)
+
+python dictionaries:
+#print dictionary
+dictionary = {
+    "fruit":"avacado",
+    "color":"green",
+    "price":200
+}
+print(dictionary)
+
+#duplicate
+dictionary = {
+    "fruit":"avacado",
+    "color":"green",
+    "price":200,
+    "price":500
+}
+print(dictionary)
+
+#dictionary items
+dictionary = {
+    "fruit":"avacado",
+    "color":["green","violet","yellow","black"],
+    "fruits":True
+}
+print(dictionary)
+
+#type
+dictionary = {
+    "fruit":"avacado",
+    "color":"green",
+    "price":200
+}
+print(type(dictionary))
+
+#access items
+dictionary = {
+    "fruit":"avacado",
+    "color":"green",
+    "price":200
+}
+x=dictionary["fruit"]
+
+#get
+dictionary = {
+    "fruit":"avacado",
+    "color":"green",
+    "price":200
+}
+x=dictionary.get("price")
+print(x)
+
+dictionary = {
+    "fruit":"avacado",
+    "color":"green",
+    "price":200
+}
+x=dictionary.values()
+print(x)
+
+#change items
+dictionary = {
+    "fruit":"avacado",
+    "color":"green",
+    "price":200
+}
+dictionary["fruit"]="kiwi"
+
+#update
+dictionary = {
+    "fruit":"avacado",
+    "color":"green",
+    "price":200
+}
+x=dictionary.update({"price":500})
+
+#add items
+dictionary = {
+    "fruit":"avacado",
+    "color":"green",
+    "price":200
+}
+dictionary["place"]="banglore"
+print(dictionary)
+
+#remove
+dictionary = {
+    "fruit":"avacado",
+    "color":"green",
+    "price":200
+}
+dictionary.pop("price")
+print(dictionary)
+
+#copy
+dictionary = {
+    "fruit":"avacado",
+    "color":"green",
+    "price":200
+}
+mydictionary=dictionary.copy()
+print(mydictionary)
+
+#nested dictionary
+mypets={
+    "cat":{
+        "name":"pattu",
+        "year":2023
+        },
+    "dog":{
+        "name":"simba",
+        "year":2022
+        },
+    "fish":{
+        "name":"koi",
+        "year":2015
+    
+        }    
+      }
+
+python conditions:
+#equal
+a = 500
+b = 500
+if a==b:
+ print("b is equal to a")
+else:
+ print("a is not equal to b")
+ 
+#not equal
+a = 100
+b = 500
+if a!=b:
+    print("a is not equal to b")
+else:
+    print("a is equal to b")
+ 
+#greater than
+a = 300
+b = 500
+if a>b:
+    print("a is greater than b")
+else:
+    print("b is greater than a")
+    
+#greater than or equal to  
+a = 100
+b = 500
+if a>=b:
+    print("a is greater than or equals to b")
+else:
+    print("b is greater than or equals a")
+    
+#lesser than
+a = 100
+b = 500
+if a<b:
+    print("a lesser than b")
+else:
+    print("b is lesser than")
+    
+#lesser than or equal to    
+a = 100
+b = 500
+if a<=b:
+    print("a lesser than or equals to b")
+else:
+    print("b is lesser than or equals to a")    
+
+
+python while loop:
+execute statement when condition is True.
+#break
+i = 1
+while i < 6:
+  print(i)
+  if i == 3:
+    break
+  i += 1
+
+#continue 
+i = 0
+while i < 6:
+  i += 1
+  if i == 3:
+    continue
+  print(i)
+  
+
+python for loop:
+it is used to iterate over sequences
+
+#list
+fruits = ['apple', 'banana', 'cherry']
+for fruit in fruits:
+    print(fruit)
+
+#range
+for i in range(5):
+    print(i)
+
+#string
+for letter in "hello":
+    print(letter)
+
+#using for with else:
+for number in range(3):
+    print(number)
+else:
+    print("Loop finished")
